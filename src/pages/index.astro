@@ -68,6 +68,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf()
 				<section class="intro">
 					<h1 class="latest">{title}</h1>
 					<p>{description}</p>
+          <p>This is my personal site. I'm open to work. Here you can find my <a href="https://eu1.hubs.ly/y0WGz70">résumé</a>.</p>
 				</section>
 				<section aria-label="Blog post list">
 					{allPosts.map((p) => <BlogPostPreview post={p} />)}
