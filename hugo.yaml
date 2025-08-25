@@ -46,6 +46,13 @@ menu:
         icon: linkedin
 
 params:
+  blog:
+    list:
+      displayTags: true
+
+  toc:
+    displayTags: true
+
   navbar:
     displayTitle: true
     displayLogo: false
