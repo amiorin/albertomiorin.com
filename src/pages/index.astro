@@ -7,8 +7,6 @@ import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features3 from '~/components/widgets/Features3.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
-import Steps from '~/components/widgets/Steps.astro';
 import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
@@ -25,7 +23,7 @@ const metadata = {
         { text: 'Home', href: '#' },
         { text: 'About', href: '#about' },
         { text: 'FDE', href: '#FDE' },
-        { text: 'big-config ↗', href: 'https://big-config.it' },
+        { text: 'big-config ↗', href: 'https://big-config.it', target: '_blank' },
       ]}
       actions={[
         {
