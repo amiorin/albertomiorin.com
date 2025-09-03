@@ -9,7 +9,7 @@ metadata:
   title:
     default: Alberto Miorin
     template: '%s — Alberto Miorin'
-  description: 'Forward Engineer Engineer'
+  description: 'Forward Deployed Engineer'
   robots:
     index: true
     follow: true
