@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import { getPermalink } from '~/utils/permalinks';
+
+const metadata = {
+  title: '404',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="announcement"></Fragment>
+  <Fragment slot="footer"></Fragment>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Home', href: '/#' },
+        { text: 'About', href: '/#about' },
+        { text: 'FDE', href: '/#FDE' },
+        { text: 'BigConfig ↗', href: 'https://big-config.it', target: '_blank' },
+        { text: 'Blog ↗', href: 'https://big-config.it/blog', target: '_blank' },
+      ]}
+      actions={[
+        {
+          text: 'Contact me',
+          href: '/contact#form',
+        },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+  </Fragment>
+  <Hero id="hero" title="Not Found" actions={[{ variant: 'primary', text: 'Go home', href: getPermalink('/') }]}>
+    <Fragment slot="subtitle">
+      Looks like you’ve followed a broken link or entered a URL that doesn’t exist on this site.
+    </Fragment>
+  </Hero>
+</Layout>
